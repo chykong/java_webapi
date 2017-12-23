@@ -39,7 +39,7 @@ public class LoginControler {
             //登录成功
             String accessToken = UUID.randomUUID().toString();
             //放入redis
-            redisUtil.set(RedisKey.ACCESS_TOKEN + accessToken, user);
+            redisUtil.set(RedisKey.ACCESS_TOKEN + accessToken, user, 30 * 60);
             Map<String, String> map = new HashMap<>();
             map.put("accessToken", accessToken);
             JsonResult jsonResult = new JsonResult(true, GlobalReturnCode.OPERA_SUCCESS, accessToken);

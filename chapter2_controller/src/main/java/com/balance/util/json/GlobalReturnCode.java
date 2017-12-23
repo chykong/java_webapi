@@ -43,5 +43,5 @@ public class GlobalReturnCode {
     /**
      * 路径不存在
      */
-    public static final String SYSTEM_PATH_NOEXIST = "E30004";
+    public static final String SYSTEM_PATH_NOEXIST = "30004";
 }
