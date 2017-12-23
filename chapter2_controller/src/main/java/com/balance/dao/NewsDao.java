@@ -25,7 +25,7 @@ public class NewsDao {
     }
 
     public int update(News news) {
-        String sql = "update  t_news SET title=:title,content=:content   WHERE id=?";
+        String sql = "update  t_news SET title=:title,content=:content   WHERE id=:id";
         return new NamedParameterJdbcTemplate(jdbcTemplate).update(sql, new BeanPropertySqlParameterSource(news));
     }
 

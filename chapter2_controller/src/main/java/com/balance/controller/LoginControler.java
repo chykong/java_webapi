@@ -35,7 +35,7 @@ public class LoginControler {
     @PostMapping("/checkLogin")
     public JsonResult checkLogin(HttpServletRequest request, @RequestBody LoginDto loginDto) {
         User user = userService.getByUsername(loginDto.getUsername());
-        if (user != null && user.getPasssword().equals(loginDto.getPassword())) {
+        if (user != null && user.getPassword().equals(loginDto.getPassword())) {
             //登录成功
             String accessToken = UUID.randomUUID().toString();
             //放入redis

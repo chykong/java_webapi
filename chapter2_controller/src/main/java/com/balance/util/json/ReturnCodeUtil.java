@@ -1,5 +1,6 @@
 package com.balance.util.json;
 
+import java.util.HashMap;
 import java.util.Map;
 
 /**
@@ -7,7 +8,7 @@ import java.util.Map;
  */
 public class ReturnCodeUtil {
     //定义返回码及文字数据
-    private static Map<String, String> returnCodeMap;
+    private static Map<String, String> returnCodeMap=new HashMap<>();
 
     static {
         returnCodeMap.put(GlobalReturnCode.SAVE_SUCCESS, "保存成功");
@@ -15,7 +16,7 @@ public class ReturnCodeUtil {
         returnCodeMap.put(GlobalReturnCode.OPERA_SUCCESS, "操作成功");
         returnCodeMap.put(GlobalReturnCode.AUDIT_SUCCESS, "审核成功");
 
-        
+
         returnCodeMap.put(GlobalReturnCode.OPERA_FAILURE, "操作失败");
         returnCodeMap.put("20102", "账号或密码错误");
 
