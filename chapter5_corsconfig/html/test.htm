@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+	<script src="jquery.min.js" type="text/javascript"></script>
+
+</head>
+<body>
+
+</body>
+</html>
+<script>
+$.ajax({
+            url: 'http://localhost:8080/checkLogin',
+            type:'post',
+            contentType:'application/json',
+            data:  JSON.stringify({
+				"username":"admin","password":"123456"
+				}),
+            success: function (result) {
+				console.log('login success!')
+            }
+        });
+
+</script>
