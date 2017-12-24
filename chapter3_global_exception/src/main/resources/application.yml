@@ -10,3 +10,10 @@ spring:
     port: 6379
     database: 0
     password:
+  mvc:
+    throw-exception-if-no-handler-found: true
+  resources:
+    add-mappings: false
+
+logging:
+  path: d:\\logs\java_webapi
