@@ -9,6 +9,7 @@
         <module>chapter1_dao</module>
         <module>chapter2_controller</module>
         <module>chapter3_global_exception</module>
+        <module>chapter4_paramvalidator</module>
     </modules>
     <packaging>pom</packaging>
 
