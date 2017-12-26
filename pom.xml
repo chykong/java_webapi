@@ -12,6 +12,7 @@
         <module>chapter4_paramvalidator</module>
         <module>chapter5_corsconfig</module>
         <module>chapter6_checktoken</module>
+        <module>chapter7_log</module>
     </modules>
     <packaging>pom</packaging>
 

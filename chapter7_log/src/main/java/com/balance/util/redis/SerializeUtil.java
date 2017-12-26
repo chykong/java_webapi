@@ -1,3 +1,7 @@
+/*
+* Copyright 2017 tuola Croporation Limited. All rights reserved.
+*
+*/
 package com.balance.util.redis;
 
 import java.io.ByteArrayInputStream;
