@@ -11,6 +11,7 @@
         <module>chapter3_global_exception</module>
         <module>chapter4_paramvalidator</module>
         <module>chapter5_corsconfig</module>
+        <module>chapter6_checktoken</module>
     </modules>
     <packaging>pom</packaging>
 
